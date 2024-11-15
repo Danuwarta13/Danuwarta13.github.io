@@ -1,16 +1,161 @@
+/* Global Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+/* Navbar */
+nav.navbar {
+  background-color: #4e73df; /* Warna biru cerah */
+}
+
+nav.navbar a.navbar-brand {
+  font-weight: 600;
+  color: white !important;
+}
+
+nav.navbar a.nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+nav.navbar a.nav-link.active {
+  border-bottom: 2px solid white; /* Efek underline untuk menu aktif */
+}
+
+nav.navbar-toggler-icon {
+  background-color: white;
+}
+
+/* Jumbotron Section */
 .jumbotron {
+  background-color: #4e73df;
+  color: white;
   padding-top: 5rem;
-  background-color: #eee;
+  text-align: center;
 }
 
-.container {
-  background-color: #eee;
+.jumbotron h1 {
+  font-size: 3rem;
+  font-weight: 600;
 }
 
+.jumbotron p {
+  font-size: 1.2rem;
+}
+
+.jumbotron img {
+  border: 5px solid white;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+#about {
+  background-color: #ffffff;
+  /* padding: 50px 0; */
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  color: #4e73df;
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Gallery Section */
 #gallery {
-  background-color: #eee;
+  /* padding: 50px 0; */
+  background-color: #4e73df;
 }
 
-section {
-  padding-top: 5rem;
+#gallery h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact {
+  background-color: #ffffff;
+  /* padding: 50px 0; */
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  color: #4e73df;
+}
+
+form .form-control {
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  box-shadow: none;
+  margin-bottom: 15px;
+}
+
+form .form-control:focus {
+  border-color: #4e73df;
+  box-shadow: 0 0 5px rgba(78, 115, 223, 0.3);
+}
+
+form button {
+  background-color: #28a745;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+/* Footer */
+footer {
+  background-color: #4e73df;
+  color: white;
+  /* padding: 30px 0; */
+}
+
+footer a {
+  color: #dde5fb;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 2.5rem;
+  }
+
+  .jumbotron p {
+    font-size: 1rem;
+  }
+
+  #about p,
+  #contact form .form-control {
+    font-size: 1rem;
+  }
 }
