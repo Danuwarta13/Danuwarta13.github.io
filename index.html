@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <title>My-Portofollio | Rhinos</title>
   </head>
-  <body id="home">
+  <body id="home" data-bs-target="#navbarNav" data-bs-spy="scroll" class="scrollspy-example" tabindex="0">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top">
       <div class="container">
@@ -74,9 +74,9 @@
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#4e73df"
+          fill="#1f1f1f"
           fill-opacity="1"
-          d="M0,0L60,37.3C120,75,240,149,360,154.7C480,160,600,96,720,112C840,128,960,224,1080,229.3C1200,235,1320,149,1380,106.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,101.3C672,85,768,139,864,165.3C960,192,1056,192,1152,165.3C1248,139,1344,85,1392,58.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
     </section>
@@ -178,19 +178,24 @@
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#4e73df"
+          fill="#1f1f1f"
           fill-opacity="1"
-          d="M0,192L48,192C96,192,192,192,288,213.3C384,235,480,277,576,256C672,235,768,149,864,101.3C960,53,1056,43,1152,69.3C1248,96,1344,160,1392,192L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          d="M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,165.3C672,139,768,117,864,144C960,171,1056,245,1152,240C1248,235,1344,149,1392,106.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
     </section>
     <!-- Akhir Contact -->
 
     <!-- Footer -->
-    <footer class="text-center pb-5">
+    <!-- <footer class="text-center pb-5">
       <p>Created With Love by <a href="https://www.instagram.com/_danuwrt13/">Rhinoss</a></p>
-    </footer>
+    </footer> -->
     <!-- Akhir Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      const scrollspy = new bootstrap.Scrollspy(document.body, {
+        target: "#navbarNav",
+      });
+    </script>
   </body>
 </html>
