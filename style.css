@@ -73,33 +73,6 @@ section {
   margin-bottom: 20px;
 }
 
-/* Animasi ketikan */
-.animated-text {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.5rem;
-  font-weight: bold;
-  overflow: hidden;
-  border-right: 2px solid black;
-  white-space: nowrap;
-  width: 0;
-  animation: typing 3s steps(10, end) infinite, blink 0.5s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 10ch; /* Panjang teks (10 karakter) */
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .jumbotron h1 {
@@ -108,6 +81,32 @@ section {
 
   .jumbotron p {
     font-size: 1rem;
+  }
+}
+
+/* Animasi-text-lead */
+.animated-text-lead {
+  font-size: 2rem;
+  font-weight: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  width: 0;
+  animation: typing-lead 4s steps(20, end) infinite, blink 0.5s step-end;
+}
+
+/* Animasi mengetik */
+@keyframes typing-lead {
+  from {
+    width: 0;
+  }
+  to {
+    width: 21ch;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }
 
