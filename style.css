@@ -6,25 +6,36 @@ body {
 
 /* Navbar */
 nav.navbar {
-  background-color: #1f1f1f; /* Biru gelap atau abu-abu tua */
+  background-color: #1f1f1f; /* Latar belakang gelap */
 }
 
 nav.navbar a.navbar-brand {
   font-weight: 600;
-  color: #ecf0f1 !important; /* Teks terang */
+  color: #ecf0f1 !important; /* Warna teks terang */
 }
 
 nav.navbar a.nav-link {
-  color: #ecf0f1 !important; /* Teks terang */
+  color: #ecf0f1 !important; /* Warna teks terang */
   font-weight: 500;
+  transition: color 0.3s ease; /* Transisi saat hover */
+}
+
+nav.navbar a.nav-link:hover {
+  color: #ffffff !important; /* Putih saat hover */
 }
 
 nav.navbar a.nav-link.active {
-  border-bottom: 2px solid #ecf0f1; /* Efek underline untuk menu aktif */
+  color: #ecf0f1 !important; /* Warna teks aktif */
+  font-weight: bold;
+  border-bottom: 2px solid #ecf0f1; /* Efek underline */
 }
 
-nav.navbar-toggler-icon {
-  background-color: #ecf0f1; /* Putih terang */
+.navbar-toggler {
+  border-color: #ecf0f1; /* Warna border toggle */
+}
+
+.navbar-toggler-icon {
+  background-color: #ecf0f1; /* Warna ikon toggle */
 }
 
 section {
