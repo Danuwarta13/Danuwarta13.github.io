@@ -2,6 +2,9 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #e0e0e0; /* Teks terang */
+  margin: 0;
+  padding: 0;
+  background-color: #222; /* Warna latar belakang gelap */
 }
 
 /* Navbar */
@@ -44,14 +47,21 @@ section {
 
 /* Jumbotron Section */
 .jumbotron {
-  background-color: #333333; /* Abu-abu gelap */
+  /* background-color: #1f1f1f; Abu-abu gelap */
   color: #ecf0f1;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0; /* Memberikan jarak antara teks dan gambar */
+  height: 100vh; /* Mengisi seluruh tinggi layar */
 }
 
 .jumbotron h1 {
   font-size: 3rem;
   font-weight: 600;
+  margin: 20px 0; /* Memberikan jarak vertikal */
 }
 
 .jumbotron p {
@@ -61,6 +71,44 @@ section {
 .jumbotron img {
   border: 5px solid #ecf0f1;
   margin-bottom: 20px;
+}
+
+/* Animasi ketikan */
+.animated-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  overflow: hidden;
+  border-right: 2px solid black;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 3s steps(10, end) infinite, blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10ch; /* Panjang teks (10 karakter) */
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 2.5rem;
+  }
+
+  .jumbotron p {
+    font-size: 1rem;
+  }
 }
 
 /* About Section */
