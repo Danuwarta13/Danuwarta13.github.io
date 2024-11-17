@@ -84,30 +84,15 @@ section {
   }
 }
 
-/* Animasi-text-lead */
-.animated-text-lead {
-  font-size: 2rem;
-  font-weight: normal;
-  overflow: hidden;
+#typingText {
+  display: inline-block;
   white-space: nowrap;
-  border-right: 2px solid white;
-  width: 0;
-  animation: typing-lead 4s steps(20, end) infinite, blink 0.5s step-end;
+  overflow: hidden;
 }
 
-/* Animasi mengetik */
-@keyframes typing-lead {
-  from {
-    width: 0;
-  }
-  to {
-    width: 21ch;
-  }
-}
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+#typingText:after {
+  content: "\00a0"; /* Teks placeholder */
+  visibility: hidden;
 }
 
 /* About Section */
